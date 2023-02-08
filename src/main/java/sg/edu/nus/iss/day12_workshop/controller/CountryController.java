@@ -27,6 +27,7 @@ public class CountryController {
 
     // need to add jackson dependency
     @GetMapping(produces = {"application/xml"})
+    //@GetMapping
     public @ResponseBody List<Country> getAllCountries(){
 
         return ctySvc.getAllCountries();

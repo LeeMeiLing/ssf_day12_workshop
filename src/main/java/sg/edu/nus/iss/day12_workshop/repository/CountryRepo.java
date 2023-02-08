@@ -14,7 +14,10 @@ public class CountryRepo {
 
     public List<Country> getAllCountries(){
 
-        countryList = new ArrayList<>();
+        if(countryList == null){
+            countryList = new ArrayList<>();
+        }
+
         Country cty = new Country("SG", "Singapore", 6000000);
         countryList.add(cty);
 
